@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="calculate">
+      <textarea name="text" id="result" placeholder="0" disabled></textarea>
+      <hr />
+
+      <div class="list">
+        <div>
+            <button id="one" value="clear all" onclick="arc()" class="orange">A/C</button>
+            <button id="back" value="backspace" onclick="back()"><i class="fa-solid fa-angles-left"></i></button>
+            <button id="one" onclick="percent()" class="orange">%</button>
+            <button id="one" onclick="divide()" class="orange">/</button>
+        </div>
+        <div>
+            <button id="one" onclick="seven()">7</button>
+            <button id="one" onclick="nine()">9</button>
+            <button id="one" onclick="eight()">8</button>
+            <button id="one" onclick="multiply()" class="orange">*</button>
+        </div>
+        <div>
+            <button id="one" onclick="four()">4</button>
+            <button id="one" onclick="five()">5</button>
+            <button id="one" onclick="six()">6</button>
+            <button id="one" onclick="minus()" class="orange">-</button>
+        </div>
+        <div>
+            <button id="one" onclick="three()">3</button>
+            <button id="one" onclick="two()">2</button>
+            <button id="one" onclick="one()">1</button>
+            <button id="one" onclick="plus()" class="orange">+</button>
+        </div>
+       <div>
+            <button id="one" onclick="ac()"><i class="fa-solid fa-rotate"></i></button>
+            <button id="one" onclick="zero()">0</button>
+            <button id="one" onclick="dot()">.</button>
+            <button id="" onclick="equal()" class="oran">=</button>
+       </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
