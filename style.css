@@ -53,6 +53,11 @@ hr {
     border: 1px solid white;
 }
 
+#one:active, #back:active{
+    background-color: rgb(231, 231, 231);
+    border-radius: 8px;
+}
+
 #back{
     background-color: white;
     border: 1px solid white;
